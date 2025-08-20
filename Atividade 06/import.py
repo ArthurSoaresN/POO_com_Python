@@ -27,3 +27,12 @@ teste1 = random.randint(0,100)
 print(teste1)
 print()
 
+teste2 = random.random()
+print(f'{teste2}')
+print(f'{teste2:.0f}') # Tirando casas decimais 
+print(f'{teste2:.1f}')
+print(f'{teste2:.2f}')
+print()
+
+teste3 = random.randint(0,1)
+print(teste3)
