@@ -74,4 +74,27 @@ class Biblioteca:
             print('Erro na operação de Retorno')
 
     def ConsultarAcervo(self):
-        pass
+        lista_livros = []
+        lista_revistas = []
+
+        for i in self.__acervo:
+            if isinstance(i, Revista):
+                lista_revistas.append(i)
+            if isinstance(i, Livro):
+                lista_livros.append(i)
+        
+        print('Revistas no acervo: ')
+        if len(lista_revistas) != 0:
+            for i in lista_revistas:
+                lista_revistas[i].ExibirInfo()
+        else:
+            print('Vazio')
+        
+        print()
+        print('Livros no acervo: ')
+
+        if len(lista_livros) != 0:
+            for i in lista_livros:
+                lista_livros[i].ExibirInfo()
+        else:
+            print('Vazio')
