@@ -4,8 +4,8 @@
 from material import Material
 
 class Livro(Material):
-    def __init__(self, titulo, origem, ano, genero: str, paginas: int):
-        super().__init__(titulo, origem, ano)
+    def __init__(self, titulo, origem, ano, disponibilidade, genero: str, paginas: int):
+        super().__init__(titulo, origem, ano, disponibilidade)
         self.__genero = genero
         self.__paginas = paginas
 

@@ -7,8 +7,8 @@ import random
 MESES = [1,2,3,4,5,6,7,8,9,10,11,12]
 
 class Revista(Material):
-    def __init__(self, titulo, origem, ano, edicao: str):
-        super().__init__(titulo, origem, ano)
+    def __init__(self, titulo, origem, ano, disponibilidade, edicao: str):
+        super().__init__(titulo, origem, ano, disponibilidade)
         self.__edicao = edicao
         self.__mes = random.randint(1,12)
         

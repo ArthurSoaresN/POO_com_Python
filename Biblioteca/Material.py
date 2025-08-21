@@ -9,12 +9,16 @@
 # exibir_informacoes, mostrará quais são os atributos, deve ser implementado com po
 
 class Material:
-    def __init__(self, titulo: str, origem: str, ano: int):
+    def __init__(self, titulo: str, origem: str, ano: int, disponibilidade: bool):
         self.__titulo = titulo
         self.__origem = origem
         self.__ano = ano
+        self.__disponibilidade = disponibilidade
 
     # METODOS GET
+
+    def getDisponibilidade(self):
+        return self.__disponibilidade
 
     def getTitulo(self):
         return self.__titulo
@@ -26,6 +30,9 @@ class Material:
         return self.__ano
     
     # METODOS SET
+
+    def setDisponibilidade(self, novo_disponibilidade: bool):
+        self.__disponibilidade = novo_disponibilidade
 
     def setTitulo(self, novo_titulo: str):
         self.__titulo = novo_titulo
