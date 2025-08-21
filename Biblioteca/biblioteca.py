@@ -59,7 +59,7 @@ class Biblioteca:
 
     def DevolverMaterial(self, Retorno, Item):
         if isinstance(Retorno,Usuario) and isinstance(Item, Material):
-            
+
             if Item not in self.__acervo:
                 print("Este Item nao possui ao acervo")
 
@@ -72,3 +72,6 @@ class Biblioteca:
             
         else:
             print('Erro na operação de Retorno')
+
+    def ConsultarAcervo(self):
+        pass
