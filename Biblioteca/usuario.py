@@ -56,3 +56,13 @@ class Usuario:
         else:
             print(f"Historico do usuario {self.__nome} vazio")
 
+    def MostrarInventario(self):
+        LenInventario = len(self.__inventario)
+
+        if LenInventario != 0:
+            print(f'Inventário do usuario {self.__nome}')
+            for i in self.__inventario:
+                print(f'{i}. {self.__inventario[i]}')
+            else:
+                print(f'Inventario do usario {self.__nome} vazio')
+
