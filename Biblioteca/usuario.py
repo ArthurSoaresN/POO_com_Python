@@ -44,9 +44,9 @@ class Usuario:
         LenHistorico = len(self.__historico)
 
         if LenHistorico != 0:
-            print("Historico do Usuario: ")
+            print(f"Historico do usuario {self.__nome}: ")
             for i in self.__historico:
                 print(f'{i}. {self.__historico[i]}')
         else:
-            print("Historico Vazio")
+            print(f"Historico do usuario {self.__nome} vazio")
 
