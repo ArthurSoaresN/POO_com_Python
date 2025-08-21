@@ -35,5 +35,25 @@ class Biblioteca:
 # devolver_material(usuario, titulo): Faz o processo inverso.
 # consultar_acervo(): Exibe todos os materiais disponíveis no acervo, utilizando o método exibir_informacoes() de cada objeto.
 
-    def AdicionarMaterial(self, Item: Material):
-        
+    def AdicionarMaterial(self, Item):
+        if isinstance(Item, Material):
+            self.__acervo.append(Item)
+    
+    def RemoverMaterial(self, Item):
+        if isinstance(Item, Material) and Item in self.__acervo:
+            self.__acervo.remove(Item)
+
+    def EmprestarMaterial(self, Item, Consultor):
+        if isinstance(Item, Material) and isinstance(Consultor, Usuario):
+            if Item in self.__acervo and Item.getDisponibilidade():
+                Item.setDisponibilidade(False)
+                Consultor.PegarEmprestado(Item)
+                
+            elif Item in self.__acervo and not Item.getDisponibilidade():
+                print('Item Indisponivel')
+
+            else:
+                print('Item nao está presente no acervo')
+        else:
+            print('Erro na consulta do Item')
+            

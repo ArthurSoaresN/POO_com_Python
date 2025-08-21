@@ -22,9 +22,15 @@ class Usuario:
         LenHistorico = len(self.__historico)
         if LenHistorico != 0:
             return self.__historico
+        
+    def getInventario(self):
+        return self.__inventario
     
     # SET
     
+    def setInventario(self, novo_inventario: list):
+        self.__inventario = novo_inventario
+
     def setNome(self, novo_nome: str):
         self.__nome = novo_nome
     
