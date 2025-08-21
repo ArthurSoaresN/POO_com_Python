@@ -46,6 +46,10 @@ revista4 = adicionar_revista('PSICOSE', 'Oeste', 2024, True, '236')
 print()
 revista3.ExibirInfo()
 
+livro1 = adicionar_livro()
+livro2 = adicionar_livro()
+livro3 = adicionar_livro()
+livro4 = adicionar_livro()
 
 
 
