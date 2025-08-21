@@ -19,10 +19,15 @@ class Livro(Material):
     
     # METODOS SET
 
-    def setGenero(self, novo_genero):
+    def setGenero(self, novo_genero: str):
         self.__genero = novo_genero
     
-    def setPaginas(self, novo_paginas):
+    def setPaginas(self, novo_paginas: int):
         self.__paginas = novo_paginas
     
     # Metodo
+
+    def ExibirInfo(self):
+        super().ExibirInfo()
+        print(f'Genero: {self.__genero}')
+        print(f'Numero de Paginas: {self.__paginas}')
