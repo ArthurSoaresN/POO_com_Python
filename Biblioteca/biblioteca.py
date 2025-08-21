@@ -34,3 +34,6 @@ class Biblioteca:
 # Se sim, remove do acervo e adiciona ao historico_emprestimos do usuario.
 # devolver_material(usuario, titulo): Faz o processo inverso.
 # consultar_acervo(): Exibe todos os materiais disponíveis no acervo, utilizando o método exibir_informacoes() de cada objeto.
+
+    def AdicionarMaterial(self, Item: Material):
+        
