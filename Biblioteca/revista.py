@@ -2,32 +2,37 @@
 # Revista herda de Material. Atributos adicionais: edicao e mes_publicacao.
 
 from material import Material
+import random
+
+MESES = [1,2,3,4,5,6,7,8,9,10,11,12]
 
 class Revista(Material):
-    def __init__(self, titulo, origem, ano, edicao:str, mes:int):
+    def __init__(self, titulo, origem, ano, edicao:str):
         super().__init__(titulo, origem, ano)
         self.__edicao = edicao
-        self.__mes = mes
+        self.__mes = random.randint(1,12)
+        
 
     # METODOS GET
 
-    def getGenero(self):
-        return self.__genero
+    def getEdicao(self):
+        return self.__edicao
     
-    def getPaginas(self):
-        return self.__paginas
+    def getMess(self):
+        return self.__mes
     
     # METODOS SET
 
-    def setGenero(self, novo_genero):
-        self.__genero = novo_genero
+    def setEdicao(self, novo_edicao: str):
+        self.__edicao = novo_edicao
     
-    def setPaginas(self, novo_paginas):
-        self.__paginas = novo_paginas
+    def setMes(self, novo_mes: int):
+        if novo_mes in MESES:
+            self.__mes = novo_mes
     
     # Metodo
 
     def ExibirInfo(self):
         super().ExibirInfo()
-        print(f'Genero: {self.__genero}')
-        print(f'Numero de Paginas: {self.__paginas}')
+        print(f'Edicao: {self.__edicao}')
+        print(f'Mes de Postagem: {self.__mes}')
