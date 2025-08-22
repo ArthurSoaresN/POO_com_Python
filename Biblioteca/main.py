@@ -44,7 +44,7 @@ revista4 = adicionar_revista('PSICOSE', 'Oeste', 2024, True, '236')
 
 print(' ====== Exibindo uma Revista ====== ')
 revista3.ExibirInfo()
-print(' ======                      ====== ')
+print(' ================================== ')
 
 livro1 = adicionar_livro('O manifesto do partido Comunista', 'Boitempo', 1848, True, 'Economia', 254)
 livro2 = adicionar_livro('As seis licoes', 'LVM', 1959, True, 'Economia', 184)
@@ -53,7 +53,7 @@ livro4 = adicionar_livro('A Revolução dos Bichos', 'Garnier', 1945, True, 'Fan
 
 print(' ====== Exibindo um Livro ====== ')
 livro1.ExibirInfo()
-print(' ======                      ====== ')
+print(' ================================== ')
 
 biblioteca = Biblioteca(AcervoBiblioteca, UsuariosBiblioteca)
 
