@@ -83,20 +83,22 @@ class Biblioteca:
             if isinstance(i, Livro):
                 lista_livros.append(i)
         
-        print('Revistas no acervo: ')
+        print(' ====== Revistas no acervo ====== ')
         if len(lista_revistas) != 0:
             for i in lista_revistas:
                 i.ExibirInfo()
                 print()
+                print(' ======                      ====== ')
         else:
             print('Vazio')
         
         print()
-        print('Livros no acervo: ')
+        print(' ====== Livros no acervo ====== ')
 
         if len(lista_livros) != 0:
             for i in lista_livros:
                 i.ExibirInfo()
                 print()
+                print(' ======                      ====== ')
         else:
             print('Vazio')
