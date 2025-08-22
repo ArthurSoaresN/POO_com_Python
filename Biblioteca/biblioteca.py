@@ -58,18 +58,15 @@ class Biblioteca:
             print('Erro na consulta do Item')
 
     def DevolverMaterial(self, Item, Retorno):
-        if isinstance(Retorno,Usuario) and isinstance(Item, Material):
-
+        if isinstance(Retorno, Usuario) and isinstance(Item, Material):
             if Item not in self.__acervo:
-                print("Este Item nao possui ao acervo")
-
-            if Item.getTitulo() in Retorno.getInventario() and Item in self.__acervo:
+                print("Este Item nao pertence ao acervo")
+            elif Item.getTitulo() not in Retorno.getInventario():
+                print(f'O usuario {Retorno.getNome()} nao está com esse Item')
+            else:
                 Retorno.DevolverItem(Item)
                 Item.setDisponibilidade(True)
-            
-            if Item.getTitulo() not in Retorno.getInventario() and Item in self.__acervo:
-                print(f'O usuario {Retorno.getNome()} nao esta com esse Item')
-            
+                print(f'Item {Item.getTitulo()} devolvido com sucesso por {Retorno.getNome()}')
         else:
             print('Erro na operação de Retorno')
 

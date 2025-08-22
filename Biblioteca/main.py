@@ -31,7 +31,7 @@ usuario3 = criar_usuario('Davi Brito')
 usuario4 = criar_usuario('Alan')
 usuario5 = criar_usuario('Neymar')
 
-print()
+print('Teste com metodos do usuario:')
 id1 = usuario1.getId()
 nome1 = usuario1.getNome()
 print(nome1)
@@ -70,4 +70,10 @@ print(' ================================== ')
 
 print(' ====== Historico do Usuario que pegou o livro ====== ')
 usuario1.MostrarHistorico()
+print(' ================================== ')
+
+biblioteca.DevolverMaterial(revista3, usuario1)
+
+print(' ====== Revista Pos Retorno ====== ')
+revista3.ExibirInfo()
 print(' ================================== ')
