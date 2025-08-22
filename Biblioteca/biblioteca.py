@@ -57,7 +57,7 @@ class Biblioteca:
         else:
             print('Erro na consulta do Item')
 
-    def DevolverMaterial(self, Retorno, Item):
+    def DevolverMaterial(self, Item, Retorno):
         if isinstance(Retorno,Usuario) and isinstance(Item, Material):
 
             if Item not in self.__acervo:
