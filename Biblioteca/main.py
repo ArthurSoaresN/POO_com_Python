@@ -57,5 +57,5 @@ print(' ================================== ')
 
 biblioteca = Biblioteca(AcervoBiblioteca, UsuariosBiblioteca)
 
-biblioteca.ConsultarAcervo()
+biblioteca.ConsultarAcervo() # Consultando acervo
 

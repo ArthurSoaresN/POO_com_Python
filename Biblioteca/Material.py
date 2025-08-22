@@ -49,3 +49,4 @@ class Material:
         print(f'Titulo: {self.__titulo}')
         print(f'Origem: {self.__origem}')
         print(f'Ano de Postagem: {self.__ano}')
+        print(f'Disponibilidade: {self.__disponibilidade}')
