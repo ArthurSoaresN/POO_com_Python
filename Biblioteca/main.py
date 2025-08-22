@@ -37,7 +37,6 @@ nome1 = usuario1.getNome()
 print(nome1)
 print(id1)
 
-
 revista1 = adicionar_revista("Plano T", "Veja", 2025, True, "2934")
 revista2 = adicionar_revista("The Cruel Kid's Table", 'New York', 2025, True, "Edition")
 revista3 = adicionar_revista("UM CHEFE DE GOVERNO", 'Oeste', 2025, True, "479")
@@ -46,10 +45,14 @@ revista4 = adicionar_revista('PSICOSE', 'Oeste', 2024, True, '236')
 print()
 revista3.ExibirInfo()
 
-livro1 = adicionar_livro('O manifesto do partido Comunista', 'Boitempo', 1848, True, 254)
-livro2 = adicionar_livro('As seis licoes', 'LVM', 1959, True, 184)
-livro3 = adicionar_livro('O principe', 'Garnier', 1513, True, 96)
-livro4 = adicionar_livro('A Revolução dos Bichos', 'Garnier', 1945, True, 96)
+livro1 = adicionar_livro('O manifesto do partido Comunista', 'Boitempo', 1848, True, 'Economia', 254)
+livro2 = adicionar_livro('As seis licoes', 'LVM', 1959, True, 'Economia', 184)
+livro3 = adicionar_livro('O principe', 'Garnier', 1513, True, 'Politica', 96)
+livro4 = adicionar_livro('A Revolução dos Bichos', 'Garnier', 1945, True, 'Fantasia', 96)
+
+print()
+livro1.ExibirInfo()
+
 
 
 
