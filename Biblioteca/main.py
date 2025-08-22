@@ -53,8 +53,7 @@ livro4 = adicionar_livro('A Revolução dos Bichos', 'Garnier', 1945, True, 'Fan
 print()
 livro1.ExibirInfo()
 
-
-
-
 biblioteca = Biblioteca(AcervoBiblioteca, UsuariosBiblioteca)
+
+biblioteca.ConsultarAcervo()
 

@@ -86,7 +86,8 @@ class Biblioteca:
         print('Revistas no acervo: ')
         if len(lista_revistas) != 0:
             for i in lista_revistas:
-                lista_revistas[i].ExibirInfo()
+                i.ExibirInfo()
+                print()
         else:
             print('Vazio')
         
@@ -95,6 +96,7 @@ class Biblioteca:
 
         if len(lista_livros) != 0:
             for i in lista_livros:
-                lista_livros[i].ExibirInfo()
+                i.ExibirInfo()
+                print()
         else:
             print('Vazio')
