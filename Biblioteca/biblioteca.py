@@ -86,9 +86,10 @@ class Biblioteca:
         print(' ====== Revistas no acervo ====== ')
         if len(lista_revistas) != 0:
             for i in lista_revistas:
+                print()
                 i.ExibirInfo()
                 print()
-                print(' ======                      ====== ')
+                print(' ================================== ')
         else:
             print('Vazio')
         
@@ -97,8 +98,9 @@ class Biblioteca:
 
         if len(lista_livros) != 0:
             for i in lista_livros:
+                print()
                 i.ExibirInfo()
                 print()
-                print(' ======                      ====== ')
+                print(' ================================== ')
         else:
             print('Vazio')
