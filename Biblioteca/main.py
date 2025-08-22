@@ -46,10 +46,10 @@ revista4 = adicionar_revista('PSICOSE', 'Oeste', 2024, True, '236')
 print()
 revista3.ExibirInfo()
 
-livro1 = adicionar_livro()
-livro2 = adicionar_livro()
-livro3 = adicionar_livro()
-livro4 = adicionar_livro()
+livro1 = adicionar_livro('O manifesto do partido Comunista', 'Boitempo', 1848, True, 254)
+livro2 = adicionar_livro('As seis licoes', 'LVM', 1959, True, 184)
+livro3 = adicionar_livro('O principe', 'Garnier', 1513, True, 96)
+livro4 = adicionar_livro('A Revolução dos Bichos', 'Garnier', 1945, True, 96)
 
 
 
