@@ -58,6 +58,11 @@ class Biblioteca:
             print('Erro na consulta do Item')
 
     def DevolverMaterial(self, Item, Retorno):
+
+        if Item is None:
+            # Lançar Exceção
+            raise TypeError("O parametro do Item não pode ser None")
+
         if isinstance(Retorno, Usuario) and isinstance(Item, Material):
             if Item not in self.__acervo:
                 print("Este Item nao pertence ao acervo")
