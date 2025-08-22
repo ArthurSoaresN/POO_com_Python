@@ -40,11 +40,11 @@ class Usuario:
     # METODOS
 
     def PegarEmprestado(self, Item: Material):
-        self.__historico.append(Item.getTitulo)
-        self.__inventario.append(Item.getTitulo)
+        self.__historico.append(Item.getTitulo())
+        self.__inventario.append(Item.getTitulo())
 
     def DevolverItem(self, Item: Material):
-        self.__inventario.remove(Item.getTitulo)
+        self.__inventario.remove(Item.getTitulo())
     
     def MostrarHistorico(self):
         LenHistorico = len(self.__historico)
@@ -52,7 +52,7 @@ class Usuario:
         if LenHistorico != 0:
             print(f"Historico do usuario {self.__nome}: ")
             for i in self.__historico:
-                print(f'{i}. {self.__historico[i]}')
+                print(i)
         else:
             print(f"Historico do usuario {self.__nome} vazio")
 
@@ -62,7 +62,7 @@ class Usuario:
         if LenInventario != 0:
             print(f'Inventário do usuario {self.__nome}')
             for i in self.__inventario:
-                print(f'{i}. {self.__inventario[i]}')
+                print(i)
             else:
                 print(f'Inventario do usario {self.__nome} vazio')
 

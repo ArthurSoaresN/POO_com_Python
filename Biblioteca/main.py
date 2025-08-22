@@ -57,5 +57,17 @@ print(' ================================== ')
 
 biblioteca = Biblioteca(AcervoBiblioteca, UsuariosBiblioteca)
 
-biblioteca.ConsultarAcervo() # Consultando acervo
+# biblioteca.ConsultarAcervo() # Consultando acervo
 
+
+biblioteca.EmprestarMaterial(revista3, usuario1)
+
+
+
+print(' ====== Revista Pos Emprestimo ====== ')
+revista3.ExibirInfo()
+print(' ================================== ')
+
+print(' ====== Historico do Usuario que pegou o livro ====== ')
+usuario1.MostrarHistorico()
+print(' ================================== ')
