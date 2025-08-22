@@ -44,6 +44,12 @@ class Biblioteca:
             self.__acervo.remove(Item)
 
     def EmprestarMaterial(self, Item, Consultor):
+
+        if Item is None:
+            # Lançar Exceção
+            raise TypeError("O parametro do Item não pode ser None")
+
+
         if isinstance(Item, Material) and isinstance(Consultor, Usuario):
             if Item in self.__acervo and Item.getDisponibilidade():
                 Item.setDisponibilidade(False)
