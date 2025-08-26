@@ -62,3 +62,4 @@ while tentativa:
         tentativa = False
     except Exception as erro:
         print(f'Erro: {erro}')
+        
