@@ -40,7 +40,7 @@ banco.ImprimirContas(lista_usuarios)
 print()
 verificar1 = banco.VerificarNumero(10)
 print('Procurando o usuario de codigo 10')
-print(10)
+print(verificar1)
 
 print('Procurando usuario que nao existe:')
 verificar2 = banco.VerificarNumero(77)
